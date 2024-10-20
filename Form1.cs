@@ -11,7 +11,7 @@ namespace Assignment1
         public Form1()
         {
             InitializeComponent();
-            currentPlayer = "X"; //default first player is X
+            resetGame();
         }
 
         private void playerClick(object sender, EventArgs e)
@@ -20,7 +20,7 @@ namespace Assignment1
             button.Text = currentPlayer; //change button text to X or O depending on player's turn
             button.Enabled = false; //disable button so player can't misclick it again, also important to check for draw later
             Check(); //check if any player wins
-            changePlayer(); //change to next player
+            
         }
 
         private void restartGame(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace Assignment1
 
         private void resetGame()
         {
-            //set player to default (X) then re-enable all 9 button and clear text
+            //set player to default (X) then re-enable all 9 buttons and clear text
             currentPlayer = "X";
             button1.Enabled = true;
             button1.Text = "";
@@ -77,7 +77,7 @@ namespace Assignment1
 
         private void Check()
         {
-            //check for 3 matches in 3 horizontal, 3 vertical and 2 diagonal lines
+            //check for 3 matches in 8 cases (3 horizontal, 3 vertical and 2 diagonal lines)
             //then show result accordingly and update win counter
             if (button1.Text == "X" && button2.Text == "X" && button3.Text == "X"
                || button4.Text == "X" && button5.Text == "X" && button6.Text == "X"
@@ -114,6 +114,10 @@ namespace Assignment1
                 //if all 9 buttons are clicked (disabled) without anyone win, then display draw, restart game and doesn't affect win counter
                 MessageBox.Show("It's a Draw");
                 resetGame();
+            }
+            else
+            {
+                changePlayer(); //change to next player
             }
         }
     }
