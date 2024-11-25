@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Nam\\Bow Valley College\\Fall 2024\\SODV2101\\Assignment1\\Assignment1.csproj",
+      "projectUniqueName": "C:\\Nam\\Bow Valley College\\Fall 2024\\SODV2101\\SODV2101-Assignment1\\Assignment1.csproj",
       "projectName": "Assignment1",
-      "projectPath": "C:\\Nam\\Bow Valley College\\Fall 2024\\SODV2101\\Assignment1\\Assignment1.csproj",
+      "projectPath": "C:\\Nam\\Bow Valley College\\Fall 2024\\SODV2101\\SODV2101-Assignment1\\Assignment1.csproj",
       "packagesPath": "C:\\Users\\pnam0\\.nuget\\packages\\",
-      "outputPath": "C:\\Nam\\Bow Valley College\\Fall 2024\\SODV2101\\Assignment1\\obj\\",
+      "outputPath": "C:\\Nam\\Bow Valley College\\Fall 2024\\SODV2101\\SODV2101-Assignment1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pnam0\\AppData\\Roaming\\NuGet\\NuGet.Config",
